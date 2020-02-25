@@ -318,3 +318,57 @@
 .classement{
   list-style: none;
 }
+
+.section-title.lineunder {
+  position: relative;
+  margin-bottom: 25px;
+}
+.section-title {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.section-title.lineunder:after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  content: '';
+  display: block;
+  line-height: 10px;
+  width: 18px;
+  height: 2px;
+  margin-left: -9px;
+  background-color: #333;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.bottomRightRounded {
+  position: absolute;
+  z-index: 9;
+  transform: rotate(180deg);
+  margin-top: -1px;
+}
+
+.bottomRightRounded path {
+  fill: #F8F9FA;
+  stroke: #F8F9FA;
+}
+
+.topLeftRounded {
+  position: absolute;
+  margin-top: -100px;
+  z-index: 9;
+  left: 0;
+}
+
+.topLeftRounded path {
+  fill: #F8F9FA;
+  stroke: #F8F9FA;
+}
